@@ -1,0 +1,77 @@
+/*style.css*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,300&display=swap");
+
+* {
+
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: 'poppins';
+    background-color: bisque;
+}
+#input{
+    height: 39px;
+    border-radius: 7px;
+    background-color: rgb(120, 201, 255);
+    border: none;
+    border: 1.5px solid black;
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+h1{
+    font-size: 50px;
+}
+button{
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 40px;
+    background-color: #c07cff;
+    border-radius: 7px;
+    border: none;
+    border: 1.5px solid black;
+}
+button:active{
+    background-color: #9728ff;
+}
+audio{
+    margin-top: -10px;
+}
+span{
+    font-size: 28px;
+    width: 50%;
+    display: none;
+}
+h2{
+    display: none;
+    font-size: 26px;
+    width: 30%;
+}
+h3{
+    font-size: 27px;
+    display:none;
+}
+h6{
+    font-size: 30px;
+    display: none;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#main button{
+    /* margin-left: 390px; */
+    margin-top: 10px; 
+}
+@media only screen and(max-width:650px){
+    #main{
+    text-align: start;
+    }
+}
