@@ -20,13 +20,22 @@ async function data() {
   const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${input.value}`;
   const responce = await fetch(url);
   const data = await responce.json();
-  console.log(data.at());
+
+  // console.log(data.at());
+
   audio.src = data.at().phonetics.at().audio;
   audio.style.display = "block";
-  span.innerHTML ="Definition : <br/>" + data.at().meanings.at().definitions.at().definition;
+
+  span.innerHTML ="Definition : " + data.at().meanings.at().definitions.at().definition;
   span.style.display = "block";
-  h3.innerHTML ="Example : <br/>" + data.at().meanings.at().definitions.at().example;
+
+  h3.innerHTML ="Example : " + data.at().meanings.at().definitions.at().example;
   h3.style.display = "block"
+
   h2.innerHTML = "Word : " + data.at().word;
   h2.style.display = "block";
+
+if ((h3.innerHTML = "undefined")) {
+  h3.innerHTML = "Example : "+"Cant Fetch Data";
+}
 }
